@@ -40,13 +40,13 @@ export const heroPartners = [
 export const services = [
     {
         label: "Liquidity Provider",
-        desc: "Do you have an idea for a promising ventures that require liquidity for there project?  Please feel free to present your proposals, as we are willing to serve as a liquidity provider for your upcoming token.",
+        desc: "Do you have an idea for a promising venture that requires liquidity for your project? Please feel free to present your proposals, as we are willing to serve as a liquidity provider for your upcoming token.",
         icon: <FaEthereum />,
         price: "Contact Now",
     },
     {
         label: "Consulting For Projects",
-        desc: "We can provide consultation for your new tokens and demonstrate similar strategies that have been used in the passed with great success to ensure that every launch achieves at least a 500k market capitalization.",
+        desc: "We will provide consultation for your new token and demonstrate similar strategies that have been used in the past with great success to ensure that every launch achieves at least a 500k market capitalization.",
         icon: <GiTeacher />,
         price: "Contact Now",
     },
