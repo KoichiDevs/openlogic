@@ -47,7 +47,7 @@ const Services = () => {
                     <motion.p initial={{ opacity: 0, x: "-100%" }} ref={titleRef} animate={titleView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6 }} className='max-w-[500px] font-climate text-4xl text-center md:text-left'>Explore <span className='text-accent'>why</span> you need Open<span className='text-accent'>Logic</span></motion.p>
                     <motion.p initial={{ opacity: 0, x: "100%" }} ref={descRef} animate={descView ? { opacity: 1, x: 0 } : {}} transition={{ duration: 0.6 }} className='max-w-[400px] text-sm opacity-70 text-center md:text-left'>Our services will aid you in making informed decisions. Our reliable information, tools and resources will put you on the road to success.</motion.p>
                 </div>
-                <motion.div className='flex flex-col md:flex-row gap-x-6 gap-y-6' variants={containerVariants} initial="hidden" ref={serviceRef} animate={`${serviceView ? "visible" : ""}`}>
+                <motion.div className='flex flex-col md:flex-row flex-wrap lg:flex-nowrap gap-x-6 gap-y-6' variants={containerVariants} initial="hidden" ref={serviceRef} animate={`${serviceView ? "visible" : ""}`}>
                     {services.map((service, i) =>
                         <motion.div key={i} className="bg-blk p-8 rounded-[15px] flex flex-col gap-y-5 text-center items-center justify-between group hover:drop-shadow-hover transition-all ease-out duration-300 w-full" variants={childVariants}>
                             <p className='text-8xl group-hover:scale-[1.1] group-hover:rotate-[5deg] transition-all ease-in-out duration-300'>{service.icon}</p>
