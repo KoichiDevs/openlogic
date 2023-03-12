@@ -1,4 +1,4 @@
-import { FaEthereum, FaTelegramPlane } from "react-icons/fa";
+import { FaEthereum, FaTelegramPlane, FaConnectdevelop } from "react-icons/fa";
 import { GiTeacher } from "react-icons/gi";
 import { AiFillProject } from "react-icons/ai";
 import { BsTwitter, BsTelegram } from "react-icons/bs";
@@ -54,6 +54,12 @@ export const services = [
         label: "Development For Projects",
         desc: "We'll take care of the deployment and management of everything on the development side for your project, and also provide some minor consulting.",
         icon: <AiFillProject />,
+        price: "Contact Now",
+    },
+    {
+        label: "Dapp Development",
+        desc: "With experience in React, NextJS, CSS, SASS, and much more, we can provide all the frontend development in house. We can also provide backend development at industry standards.",
+        icon: <FaConnectdevelop />,
         price: "Contact Now",
     },
 ]
