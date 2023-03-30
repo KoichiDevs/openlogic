@@ -19,21 +19,25 @@ export const heroPartners = [
         name: "TWITTER",
         img: <BsTwitter />,
         color: "#00acee",
+        link: "https://twitter.com/openlogic88"
     },
     {
         name: "TELEGRAM",
         img: <FaTelegramPlane />,
         color: "#229ED9",
+        link: "https://t.me/Openlogic88"
     },
     {
         name: "CALL CHANNEL",
         img: <BsTelegram />,
         color: "#229ED9",
+        link: "https://t.me/logicalcalls"
     },
     {
         name: "EMAIL",
         img: <MdEmail />,
         color: "#ffffff",
+        link: "mailto:contact@openlogicshub.com"
     },
 ]
 
