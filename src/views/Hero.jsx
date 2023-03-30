@@ -52,16 +52,32 @@ const Hero = () => {
                 </div>
 
                 <div className='absolute bottom-3 md:bottom-10 left-0 right-0 w-fit mx-auto flex z-10 gap-x-10 flex-wrap justify-center'>
-                    {heroPartners.map((partner, i) =>
-                        <motion.div className="flex gap-x-3 items-center py-1 group cursor-pointer" key={i} initial={{ opacity: 0, y: "200%" }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, delay: i * 0.1 }}>
-                            <div className="bg-accent/20 border-[1px] border-accent p-1 md:p-3 rounded-full group-hover:bg-accent/40 group-hover:rotate-[-10deg] group-hover:scale-[1.1] transition-all ease-out duration-300">
-                                <p className="text-lg md:text-2xl" style={{ color: `${partner.color}` }}>{partner.img}</p>
-                            </div>
-
-                            <h1 className='font-bold text-accent text-sm md:text-base group-hover:text-wht/70 transition-all ease-out duration-300'>{partner.name}</h1>
-                        </motion.div>
-                    )}
-                </div>
+  {heroPartners.map((partner, i) => (
+    <motion.a
+      className="flex gap-x-3 items-center py-1 group cursor-pointer"
+      key={i}
+      initial={{ opacity: 0, y: "200%" }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5, delay: i * 0.1 }}
+      href={partner.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div
+        className="bg-accent/20 border-[1px] border-accent p-1 md:p-3 rounded-full group-hover:bg-accent/40 group-hover:rotate-[-10deg] group-hover:scale-[1.1] transition-all ease-out duration-300"
+      >
+        <p className="text-lg md:text-2xl" style={{ color: `${partner.color}` }}>
+          {partner.img}
+        </p>
+      </div>
+      <h1
+        className="font-bold text-accent text-sm md:text-base group-hover:text-wht/70 transition-all ease-out duration-300"
+      >
+        {partner.name}
+      </h1>
+    </motion.a>
+  ))}
+</div>
                 <motion.img initial={{ opacity: 0, x: "50%" }} animate={{ opacity: 0.4, x: 0 }} transition={{ duration: 0.7 }} src="/hero.webp" alt="hero" className="absolute object-cover right-0 top-0 h-full z-0 opacity-40 lg:opacity-100" />
                 <div className='bg-accent w-80 h-80 rounded-full blur-[230px] absolute z-10 bottom-[-5rem] left-[-5rem] hidden md:block'></div>
             </main>
